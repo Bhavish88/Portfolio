@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import licenses1 from '../assets/Licenses (1).png';
-import resume3 from '../assets/Resume (3).png';
+import licenseTrackerPreview from '../assets/license-tracker-preview.png';
+import resumePreview from '../assets/resume-preview.png';
 
 // Mock Terminal Widget for the Featured Project (Fallback)
 const TerminalMockup = () => (
@@ -264,11 +264,11 @@ export default function Projects() {
 
   // Paths to screenshots inside the assets directory
   const trackerImages = [
-    licenses1,
+    licenseTrackerPreview,
   ];
 
   const analyzerImages = [
-    resume3,
+    resumePreview,
   ];
 
   return (
