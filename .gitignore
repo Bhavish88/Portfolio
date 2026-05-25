@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Unused local/template files kept locally but ignored
+src/assets/profile.png
+src/assets/hero.png
+src/assets/react.svg
+src/assets/vite.svg
+public/icons.svg
