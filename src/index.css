@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-syne: 'Syne', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  
+  /* Deep violet/subtle purple accent */
+  --color-violet-accent: #7c3aed;
+  --color-violet-accent-light: #a78bfa;
+  --color-violet-accent-dark: #5b21b6;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 24px; /* Balanced offset to prevent floating Navbar overlap without excessive top gap */
+}
+
+body {
+  background-color: #000000;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for dark premium theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #18181b;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #27272a;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Text glow utilities for subtle luxury feel */
+.text-glow-subtle {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+}
+
+.text-glow-strong {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.15), 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Base fade/transition styles */
+.transition-luxury {
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Outline Typography Helper for Cinematic Heading Style */
+.text-outline {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+  color: transparent;
+  transition: -webkit-text-stroke 0.5s ease;
+}
+
+.text-outline:hover {
+  -webkit-text-stroke: 1px rgba(167, 139, 250, 0.6);
+}
+
+/* Grid Noise Dot Background for SaaS/Developer Aesthetic */
+.bg-grid-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
