@@ -161,7 +161,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Side Visual (Redesigned Premium Portrait Frame) */}
-        <div className="lg:col-span-5 flex justify-center items-center relative">
+        <div className="lg:col-span-5 flex flex-col justify-center items-center gap-5 sm:gap-6 relative">
 
           {/* Subtle Ambient light behind portrait */}
           <div className="absolute -inset-4 bg-gradient-to-tr from-violet-accent/25 via-transparent to-indigo-500/10 rounded-full blur-2xl opacity-75 z-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-750" />
@@ -181,6 +181,18 @@ export default function Hero() {
                 loading="eager"
               />
             </div>
+          </motion.div>
+
+          {/* Tagline Below Photo */}
+          <motion.div
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+            className="z-10 text-center max-w-[290px]"
+          >
+            <p className="font-sans text-xs sm:text-[13px] text-zinc-400 leading-relaxed font-light select-none">
+              Passionate about building scalable backend systems, secure APIs, and efficient databases. Let’s build something impactful. <span className="text-violet-accent-light">🚀</span>
+            </p>
           </motion.div>
         </div>
 
