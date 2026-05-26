@@ -164,23 +164,20 @@ export default function Hero() {
         <div className="lg:col-span-5 flex justify-center items-center relative">
 
           {/* Subtle Ambient light behind portrait */}
-          <div className="absolute -inset-4 bg-gradient-to-tr from-violet-accent/25 via-transparent to-indigo-500/10 rounded-[40px] blur-2xl opacity-75 z-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-750" />
-
-          {/* Minimal Floating Decorative Accent stamp */}
-          <div className="absolute -top-6 left-8 text-[8px] font-mono text-zinc-600 tracking-[0.25em] hidden lg:block select-none">[0x88A_CORE_SECURE]</div>
+          <div className="absolute -inset-4 bg-gradient-to-tr from-violet-accent/25 via-transparent to-indigo-500/10 rounded-full blur-2xl opacity-75 z-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-750" />
 
           {/* Glassmorphic Portrait presentation container */}
           <motion.div
             variants={imageContainerVariants}
             initial="hidden"
             animate="visible"
-            className="relative z-10 w-full max-w-[330px] sm:max-w-[380px] aspect-[1187/1600] rounded-[32px] border border-zinc-800/40 bg-zinc-950/20 backdrop-blur-xl p-2.5 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] group hover:border-violet-accent/30 transition-all duration-700"
+            className="relative z-10 w-full max-w-[320px] sm:max-w-[360px] aspect-square rounded-full border border-zinc-800/40 bg-zinc-950/20 backdrop-blur-xl p-2.5 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] group hover:border-violet-accent/30 transition-all duration-700"
           >
-            <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-zinc-900/60 border border-zinc-900/50">
+            <div className="relative w-full h-full rounded-full overflow-hidden bg-zinc-900/60 border border-zinc-900/50">
               <img
                 src={profileImg}
                 alt="Bhavish Mulleshwari"
-                className="w-full h-full object-cover object-center group-hover:scale-102 transition-all duration-[1.2s] ease-[0.16,1,0.3,1]"
+                className="w-full h-full object-cover object-top group-hover:scale-102 transition-all duration-[1.2s] ease-[0.16,1,0.3,1]"
                 loading="eager"
               />
             </div>
