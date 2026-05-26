@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.jpeg';
+import resumePdf from '../assets/Bhavish-Resume.pdf';
 
 export default function Hero() {
 
@@ -146,8 +147,8 @@ export default function Hero() {
 
             {/* Resume Download */}
             <a
-              href="#"
-              download
+              href={resumePdf}
+              download="Bhavish-Resume.pdf"
               className="h-10 px-4 flex items-center gap-2 rounded-full bg-zinc-950/40 border border-zinc-850 hover:border-zinc-650 hover:bg-zinc-900 hover:text-white text-zinc-400 text-[10px] tracking-widest font-semibold uppercase transition-all duration-300 hover:-translate-y-0.5 shadow-sm select-none"
               aria-label="Download Resume"
             >
@@ -173,26 +174,15 @@ export default function Hero() {
             variants={imageContainerVariants}
             initial="hidden"
             animate="visible"
-            className="relative z-10 w-full max-w-[330px] sm:max-w-[380px] aspect-[3/4] sm:aspect-[4/5] rounded-[32px] border border-zinc-800/40 bg-zinc-950/20 backdrop-blur-xl p-2.5 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] group hover:border-violet-accent/30 transition-all duration-700"
+            className="relative z-10 w-full max-w-[330px] sm:max-w-[380px] aspect-[1187/1600] rounded-[32px] border border-zinc-800/40 bg-zinc-950/20 backdrop-blur-xl p-2.5 overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] group hover:border-violet-accent/30 transition-all duration-700"
           >
             <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-zinc-900/60 border border-zinc-900/50">
-
-              {/* Inner ambient gradients for artistic visual depth */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent z-10 pointer-events-none" />
-              <div className="absolute inset-0 bg-violet-accent/5 opacity-0 group-hover:opacity-100 z-10 transition-opacity duration-700 pointer-events-none" />
-
               <img
                 src={profileImg}
                 alt="Bhavish Mulleshwari"
-                className="w-full h-full object-cover object-center grayscale brightness-[0.85] group-hover:grayscale-0 group-hover:scale-102 group-hover:brightness-100 transition-all duration-[1.2s] ease-[0.16,1,0.3,1]"
+                className="w-full h-full object-cover object-center group-hover:scale-102 transition-all duration-[1.2s] ease-[0.16,1,0.3,1]"
                 loading="eager"
               />
-
-              {/* Artistic fine technical labels */}
-              <div className="absolute bottom-5 left-6 right-6 z-20 flex justify-between items-center pointer-events-none font-mono text-[9px] text-zinc-500 tracking-[0.2em]">
-                <span>[BM // PY_DEV]</span>
-                <span className="text-zinc-600">SYS_ARCH.INIT_</span>
-              </div>
             </div>
           </motion.div>
         </div>

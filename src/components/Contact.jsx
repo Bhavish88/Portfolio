@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import resumePdf from '../assets/Bhavish-Resume.pdf';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -154,8 +155,8 @@ export default function Contact() {
 
             {/* Highlighted Resume Card */}
             <a 
-              href="#" 
-              download
+              href={resumePdf} 
+              download="Bhavish-Resume.pdf"
               className="w-full sm:w-48 rounded-2xl border border-violet-accent/30 bg-violet-accent/5 backdrop-blur-xl p-4 flex flex-col items-center gap-2.5 shadow-[0_10px_25px_rgba(124,58,237,0.06)] hover:border-violet-accent/70 hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(124,58,237,0.15)] transition-all duration-300 group select-none"
             >
               <div className="w-6 h-6 text-violet-accent-light group-hover:text-white transition-colors duration-300">
