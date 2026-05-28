@@ -126,7 +126,7 @@ export default function About() {
               <div className="flex flex-col gap-4 pl-1">
                 <div>
                   <h4 className="font-sans text-sm sm:text-md font-semibold text-zinc-100">BSc IT</h4>
-                  <span className="font-sans text-zinc-400 text-xs font-light">CGPA: 9.0</span>
+                  <span className="font-sans text-zinc-400 text-xs font-light">CGPA: 8.35</span>
                 </div>
                 <div className="border-t border-zinc-900/40 pt-3">
                   <h4 className="font-sans text-sm sm:text-md font-semibold text-zinc-100">HSC</h4>
